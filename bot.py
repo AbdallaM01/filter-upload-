@@ -39,8 +39,6 @@ from lazybot import LazyPrincessBot
 from util.keepalive import ping_server
 from lazybot.clients import initialize_clients
 
-
-PORT = "8080"
 LazyPrincessBot.start()
 loop = asyncio.get_event_loop()
 
@@ -78,8 +76,3 @@ if __name__ == '__main__':
         logging.info('-----------------------🧐 Service running in Lazy Mode 😴-----------------------')
     except KeyboardInterrupt:
         logging.info('-----------------------😜 Service Stopped Sweetheart 😝-----------------------')
-        
-if name == 'main': 
-    port = int(os.environ.get('PORT', 5000))
-    app = Bot()
-    app.run(host='0.0.0.0', port=port)
